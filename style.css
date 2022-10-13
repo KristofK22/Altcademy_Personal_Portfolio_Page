@@ -1,0 +1,202 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  color:#fff
+}
+
+.Navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.Navbar .container-xxl {
+  padding: 0;
+}
+
+@keyframes FadeInButton {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.Home_Button {
+  background-color: #000000;
+  animation: FadeInButton 4.2s cubic-bezier(.53,.54,0,1);
+  animation-iteration-count: 1;
+}
+
+.Home_Button:focus, .Home_Button:hover {
+  color:#fff;
+  text-decoration: none;
+}
+
+.Home_Logo {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.Home_Logo:focus, .Home_Logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.Top_Divider_Logo {
+  height: 2px;
+  width: 725px;
+  background-color: rgb(165, 159, 84);
+  border-radius: 90%;
+  box-shadow: 0px 10px 50px 10px rgb(255, 255, 255);
+}
+
+
+
+.navbar-nav:focus .nav-link, .navbar-nav:hover .nav-link {
+  color: #767676;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color:#fff !important;
+  text-decoration: none;
+}
+
+
+
+@keyframes SlideUpFromBottom {
+  from {padding-top: 100vh;}
+  to {padding-top: 0;}
+}
+
+#SlideUpFromBottom {
+  animation: SlideUpFromBottom 1.6s cubic-bezier(.53,.54,0,1);
+  animation-iteration-count: 1;
+}
+
+@keyframes FadeInNav {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.FadeInNav {
+  animation: FadeInNav 6.2s cubic-bezier(.53,.54,0,1);
+  animation-iteration-count: 1;
+}
+
+.shimmer {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0 auto;
+  padding: 0 140px 0 0;
+  display: inline;
+  margin-bottom: 0;
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(255, 230, 0, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#000000), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#000000), to(#000000), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#000000), to(#000000), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s;
+  animation-timing-function: 6s linear;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #000000;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+
+/* Hero Content */
+
+.HeroScroll {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.HeroContent {
+  height: calc(100vh - 169.4px);
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url(https://picsum.photos/1920);
+}
+
+.HeroIntroBaseBar {
+  height: 2px;
+  width: 325px;
+  background-color: rgb(165, 159, 84);
+  border-radius: 90%;
+  box-shadow: 0px 10px 50px 10px rgb(255, 255, 255);
+}

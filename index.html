@@ -16,57 +16,161 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+    <!-- JavaScript Scrollbar Reset -->
+    <script>
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+    </script>
+
   </head>
 
   <body>
 
     <header>
 
-      <nav class="navbar navbar-expand-md bg-light d-none d-md-grid shadow-sm justify-content-center">
+      <nav class="Navbar navbar navbar-expand-md m-0 d-none d-md-grid shadow-sm justify-content-center">
         
-        <div class="container-xxl d-grid">
+        <div class="container-fluid d-grid">
+          
+          <div class="collapse navbar-collapse justify-content-center pt-3 pb-2" id="navbarSupportedContent">
             
-          <a class="navbar-brand mx-auto" href="#" role="navigation" aria-current="page">
-            Kristof Kiraly
-          </a>
+            <button class="Home_Button rounded-lg btn btn-sm d-none d-md-flex justify-content-center p-0" role="button">
+              <a class="Home_Logo navbar-brand m-0 p-0" href="#" role="navigation" aria-current="page">
+                <h1 class="text-center shimmer pe-0">Kristof Kiraly</h1>
+              </a>
+            </button>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item rounded-pill btn btn-sm btn-outline-light py-0 px-1 border">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item rounded-pill btn btn-sm btn-outline-light py-0 px-1 border">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item rounded-pill btn btn-sm btn-outline-light py-0 px-1 border">
-                <a class="nav-link" aria-current="page" href="#">Projects</a>
-              </li>
-              <li class="nav-item rounded-pill btn btn-sm btn-outline-light py-0 px-1 border">
-                <a class="nav-link" aria-current="page" href="#">Contact</a>
-              </li>
-              <li class="nav-item rounded-pill btn btn-sm btn-outline-light py-0 px-1 border">
-                <a class="nav-link" aria-current="page" href="#">Links</a>
-              </li>
-              
-            </ul>
           </div>
+          
+        </div>
 
+      </nav>
+      
+      <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav id="SlideUpFromBottom" class="Navbar navbar navbar-expand-md d-none d-md-grid mb-0 justify-content-center">
+        
+        <div class="Top_Divider_Logo mx-auto"></div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="FadeInNav navbar-nav mb-md-3">
+            <li class="nav-item pe-5">
+              <button class="btn btn-sm p-0 border-0" role="button">
+                <a class="nav-link" aria-current="page" href="#">About Me</a>
+              </button>
+            </li>
+            <li class="nav-item px-5">
+              <button class="rounded-pill btn btn-sm p-0" role="button">
+                <a class="nav-link" aria-current="page" href="#">Skills</a>
+              </button>
+            </li>
+            <li class="nav-item px-5">
+              <button class="rounded-pill btn btn-sm p-0" role="button">
+                <a class="nav-link" aria-current="page" href="#">Recent Projects</a>
+              </button>
+            </li>
+            <li class="nav-item px-5">
+              <button class="rounded-pill btn btn-sm p-0" role="button">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </button>
+            </li>
+            <li class="nav-item ps-5">
+              <button class="rounded-pill btn btn-sm p-0" role="button">
+                <a class="nav-link" aria-current="page" href="#">Links</a>
+              </button>
+            </li>
+          </ul>
         </div>
         
-
-        
-
       </nav>
 
     </header>
 
     <main>
-      <div class="container-xxl">
-        Main
+      <div class="HeroScroll">
+        <div class="HeroContent d-flex align-items-end">
+          <div class="row g-0">
+            <div class="col-12">
+              <h1 class="display-1 ms-5 ps-5 mb-0">Hey, I'm</h1>
+              <br>
+              <h1 class="display-1 ms-5 ps-5 pb-5">Kristof Kiraly</h1>
+              <div class="HeroIntroBaseBar mb-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="HeroContent d-flex align-items-center justify-content-end">
+          <div class="row g-0">
+            <div class="col-12">
+              <h1 class="display-1 pe-5 pb-5">About Me</h1>
+              <hr/>
+              <h5>
+                I'm an aspiring Front End Developer currently living in the United Kingdom. 
+                <br> 
+                I love to be crafty, systematic, and relentless.
+                <br>
+                I'm a well-organised person, problem solver, independent employee with high attention to detail.
+                <br>
+                My style is rather minimalistic and has a touch of class.
+              </h5>
+              <div class="HeroIntroBaseBar ms-auto mb-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="HeroContent d-flex align-items-end justify-content-center">
+          <div class="row g-0">
+            <div class="col-12">
+              <h1 class="display-1 ms-5 ps-5 pb-5">Skills</h1>
+              <h5 class="text-center">
+                HTML <div class="vr"></div> CSS
+              </h5>
+              <div class="HeroIntroBaseBar mb-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="HeroContent d-flex align-items-end justify-content-center">
+          <div class="row g-0">
+            <div class="col-12">
+              <h1 class="display-1 ms-5 ps-5 pb-5">Recent Projects</h1>
+              <h5 class="text-center">Clone Projects</h5>
+              <div class="HeroIntroBaseBar mb-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="HeroContent d-flex align-items-end">
+          <div class="row g-0">
+            <div class="col-12">
+              <h1 class="display-1 ms-5 ps-5 pb-5">Contact</h1>
+              <h5>
+                Email
+                <br>
+                LinkedIn
+                <br>
+                Twitter
+                <br>
+                Facebook
+                <br>
+                Instagram
+              </h5>
+              <div class="HeroIntroBaseBar mb-5"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
 
@@ -74,8 +178,32 @@
 
     <footer>
       
-      <div class="container-xxl">
-        Footer
+      <div class="container-fluid">
+        <div class="row g-0">
+          
+          <div class="col-4">
+            Kristof Kiraly
+            <hr/>
+            © 2022, Built and designed by Kristof Kiraly
+          </div>
+
+          <div class="col-4">
+            Links
+            <hr/>
+            Intro About Me
+            <br>
+            Projects Contact
+          </div>
+
+          <div class="col-4">
+            <h5 class="Lead">
+              Get in touch
+            </h5>
+            <hr/>
+            Social Icons/Links
+          </div>
+          
+        </div>
       </div>
       
     </footer>
